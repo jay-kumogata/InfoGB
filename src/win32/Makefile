@@ -1,12 +1,14 @@
 # gcc (GCC) 11.4.0
+# x86_64-w64-mingw32-gcc (GCC) 11.4.0
 
-CC = gcc
+#CC = gcc
+CC = x86_64-w64-mingw32-gcc
 TARBALL = InfoGB_05J
 
 # InfoGB
 .CFILES =	../cpu.cpp \
 		../joypad.cpp \
-	        ../mem.cpp \
+		../mem.cpp \
 		../rom.cpp \
 		../sound.cpp \
 		../vram.cpp \
@@ -15,8 +17,8 @@ TARBALL = InfoGB_05J
 
 .OFILES	=	$(.CFILES:.cpp=.o)
 
-CCFLAGS =
-LDFILGS = -lcomdlg32 -lstdc++ -lwinmm -lgdi32 -ldsound 
+CCFLAGS = 
+LDFILGS = -lcomdlg32 -lstdc++ -lwinmm -lgdi32 -ldsound
 
 all: InfoGB
 
