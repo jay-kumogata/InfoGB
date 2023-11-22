@@ -3,6 +3,8 @@
 ## Introduction
 InfoGB is a Gameboy emulator that runs on Windows.
 
+![](https://github.com/jay-kumogata/InfoGB/blob/master/screenshots/SPACE01.png)
+
 ## How to run
 
 	> ./InfoGB sample1.gb &
